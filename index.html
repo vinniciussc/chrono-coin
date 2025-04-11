@@ -5,11 +5,17 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ChronoCoin</title>
+
+    <!-- Plausible Analytics -->
+    <script defer data-domain="chrono-coin.netlify.app" src="https://plausible.io/js/script.outbound-links.tagged-events.js"></script>
+    <script>
+      window.plausible = window.plausible || function() {
+        (window.plausible.q = window.plausible.q || []).push(arguments)
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
-    <script defer data-domain="chrono-coin.netlify.app" src="https://plausible.io/js/script.outbound-links.tagged-events.js"></script>
-    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
-    >
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
